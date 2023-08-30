@@ -1,27 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y29CP0B203"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-Y29CP0B203');
+    </script>
+    <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holo Doc</title><link href="https://fonts.googleapis.com/css2?family=Nova+Round&amp;display=swap" rel="stylesheet">
+    <meta property="og:image" content="/fav png.png">
+    <title>Holo Docs</title><link href="https://fonts.googleapis.com/css2?family=Nova+Round&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/loader.css">
+    <link rel="stylesheet" href="/madeWithLove.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Explore a comprehensive collection of study materials, class notes, and free Udemy course links all in one place. Visit our site now.">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Orbitron:wght@600&family=Playfair+Display&family=Rajdhani:wght@600&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
     </style>
+    <style>
+        .docs-logo{
+            color: rgb(255, 255, 255);
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
+        <nav> 
             <section class="left-nav">
-                <a href="/index.html"><img src="HOLO DOCS-logos_black-cropped.webp" alt="Logo"></a>
+                <div class="left-nav-logo">
+                    <a href="/index.html"><span class="holo-logo">HOLO </span> <span class="docs-logo">DOCS</span></a>
+                    <span id="hamburger" style="padding-right: 10px;font-size:25px">&#9776;</span>
+                </div>
             </section>
             <section class="right-nav">
                 <div class="right-nav-links">
                     <span><a href="#">Home</a></span>
-                    <span><a href="#">Docs</a></span>
-                    <span><a href="#">Course L</a></span>
-                    <span><a href="#">Contact Me</a></span>
+                    <span><a href="/docs.html">Docs</a></span>
+                    <span><a href="/course.html">Course Links</a></span>
+                    <span><a href="#footer">Contact Me</a></span>
                 </div>
                 <div class="header-flex">
                     <section class="heading">
@@ -38,19 +60,40 @@
                 </div>
             </section>
         </nav>
-        <div class="header-matter">
-           
-        </div>
     </header>
     <main>
-
+        <h1>Documents and Course Links</h1>
+        <section class="docs">
+            <img class="docs-img" src="/imgs/—Pngtree—document 3d icon_7966094.webp" alt="Docs">
+            <div>
+                <p>
+                    Dive into the world of comprehensive subject materials right at your fingertips. The platform offers a dedicated section for each subject,
+                    where you can find a treasure trove of documents meticulously curated to aid your learning. From lecture notes and study guides to reference 
+                    articles and practice assignments, the collection covers it all. Whether you're preparing for an upcoming exam or aiming to deepen your 
+                    understanding of a particular topic, the subject-specific documents are here to support your academic endeavors. <br> 
+                </p>
+                <a href="/docs.html">Goto Page</a>
+             </div>
+        </section> 
+        <section class="course">
+            <div>
+                <p>
+                    Expand your horizons with a curated selection of free course links, accessible effortlessly. Explore a variety of subjects and topics, 
+                    each with a handpicked collection of online courses that cater to different learning preferences. Whether you're looking to supplement 
+                    your current studies or venture into a new field entirely, these free course links offer a gateway to valuable knowledge. Elevate your 
+                    learning journey at your own pace, exploring diverse resources that empower you to excel in your academic pursuits. <br>
+                </P>
+                <a href="/course.html">Goto Page</a>
+            </div>
+            <img class="course-img" src="/imgs/link-6073774-4996994.webp" alt="Docs">
+        </section>
     </main>
-    <footer>
+    <footer id="footer">
         <div class="contact">
             <h1>Contact</h1>
             <div class="contact-box">
                 <div class="cont-left">
-                    <h2>Contact me</h2>
+                    <h2>Contact <br> Me</h2>
                     <p>Feel free to contact me regarding any inquiries about course links and documents. 
                         Whether you need help with content, site navigation, or extra resources, I'm available.
                         Reach out via direct message or email for quick assistance. Your feedback is valuable,
@@ -60,13 +103,19 @@
                     <p>Thank You</p>
                 </div>
                 <div class="cont-right">
-                    <form action="">
+                    <form action="https://formsubmit.co/16d73c1ac59c340329e082d075026963 " method="POST">
                         <label for="name"><strong></strong></label><br />
                         <input type="text" name="name" placeholder="Name" required /><br />
                         <label for="email"><strong></strong></label><br />
                         <input type="email" name="email" placeholder="Email" required /><br />
                         <label for="message"><Strong></Strong></label><br>
-                        <textarea name="message" id="message" cols="35" rows="10" placeholder="Message"></textarea><br>
+                        <input type="hidden" name="_next" value="https://holodocs.netlify.app/thankyou.html">
+                        <input type="hidden" name="_captcha" value="true">
+                        <input type="hidden" name="_blacklist" value="fuck, bastered, bad words, sex, stupid, idiot, bitch">
+                        <input type="hidden" name="_autoresponse" value="Hello there,
+                        Rest assured, I'll be in touch shortly to assist you with your query. 
+                        Best regards, -Anurag">
+                        <textarea name="message" id="message" cols="35" rows="10" placeholder="Message">Request a free course or pdf...</textarea><br>
                         <button type="submit">Submit</button>
                     </form>
                 </div>
@@ -74,15 +123,37 @@
         </div>
         <div class="about">
             <h2>Advice:</h2>
-            <P>If you have any questions, need information, or require assistance with course links and documents, feel free to reach out to me. You can easily get in touch by sending me a message or an email. I am dedicated to addressing your inquiries and ensuring that the course links and documents are kept current and relevant. Your input is important, and I will make every effort to respond promptly and provide the necessary updates. Thank you for considering my site as a resource, and I'm here to help in any way I can.
+            <P>If you have any questions, need information, or require assistance with course links and documents, feel free to reach out to me. 
+                You can easily get in touch by sending me a message or an email. I am dedicated to addressing your inquiries and ensuring that the
+                 course links and documents are kept current and relevant. Your input is important, and I will make every effort to respond promptly
+                  and provide the necessary updates. Thank you for considering my site as a resource, and I'm here to help in any way I can.
 
                 <br>Thank you and regards,<br>
-                <p style="color: aquamarine;">Anurag</p>
-                Admin</P>
+                <a style="color: aquamarine;" href="https://anu27.tech" target="_blank">Anurag</a>
+                <p>Admin</P>
         </div>
+        <section class="madeWithLove">
+                <span>Made &nbsp;with</span>
+                 <span class="love">
+                    <i class="fas fa-heart" style="color: #eb0046;"></i>
+                </span> 
+                <span>by</span>&nbsp;<a  href="https://anu277.github.io/Portfolio/">Anu.B</a>&nbsp;.
+        </section>
     </footer>
     <div class="cpr">
-            <p> © 2023 HOLO DOC. </p><p> This website is designed to be both free and fair to use. We encourage you to explore the content and resources provided here. For any inquiries or concerns related to copyright or usage, please feel free to reach out to us at [Your Contact Email]. Your feedback and suggestions are valuable to us as we strive to maintain a platform that respects intellectual property rights while fostering an open and accessible environment.</p>
-        </div>
+        <p> © 2023 HOLO DOCS. </p><p> This website is designed to be both free and fair to use. We encourage you to explore 
+            the content and resources provided here. For any inquiries or concerns related to copyright or usage, please feel free to reach out 
+            by messaging us. Your feedback and suggestions are valuable to us as we strive to maintain a platform that respects intellectual 
+            property rights while fostering an open and accessible environment.
+        </p>
+    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- <script src="/scrollreveal.min.js"></script> -->
+    <script src="/script.js"></script>
+    <script>
+      
+        
+    </script>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anub0709" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FFBF00" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 </body>
 </html>

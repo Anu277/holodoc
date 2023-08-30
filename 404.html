@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y29CP0B203"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Y29CP0B203');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      404
+    </title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Orbitron:wght@600&family=Playfair+Display&family=Rajdhani:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    </style>
+    <style>
+      body{
+        overflow: hidden;
+      }
+      .wrapper-outer{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background-color: rgb(255, 255, 255);
+      }
+      .wrapper {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+      
+      .circle {
+        background-color:rgb(0, 167, 117);
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        border-radius: 50%;
+        left: 15%;
+        transform-origin: 50%;
+        animation: circle7124 .5s alternate infinite ease;
+      }
+      
+      @keyframes circle7124 {
+        0% {
+          top: 60px;
+          height: 5px;
+          border-radius: 50px 50px 25px 25px;
+          transform: scaleX(1.7);
+        }
+      
+        40% {
+          height: 20px;
+          border-radius: 50%;
+          transform: scaleX(1);
+        }
+      
+        100% {
+          top: 0%;
+        }
+      }
+      
+      .circle:nth-child(2) {
+        left: 45%;
+        animation-delay: .2s;
+      }
+      
+      .circle:nth-child(3) {
+        left: auto;
+        right: 15%;
+        animation-delay: .3s;
+      }
+      
+      .shadow {
+        width: 20px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: rgba(0,0,0,0.9);
+        position: absolute;
+        top: 62px;
+        transform-origin: 50%;
+        z-index: -1;
+        left: 15%;
+        filter: blur(1px);
+        animation: shadow046 .5s alternate infinite ease;
+      }
+      
+      @keyframes shadow046 {
+        0% {
+          transform: scaleX(1.5);
+        }
+      
+        40% {
+          transform: scaleX(1);
+          opacity: .7;
+        }
+      
+        100% {
+          transform: scaleX(.2);
+          opacity: .4;
+        }
+      }
+      
+      .shadow:nth-child(4) {
+        left: 45%;
+        animation-delay: .2s
+      }
+      
+      .shadow:nth-child(5) {
+        left: auto;
+        right: 15%;
+        animation-delay: .3s;
+      }
+      .sorry{
+        font-size: 50px;
+      }
+      @media screen and (min-width:1024px) {
+        #lottie-container {
+          width: 50%; 
+          transform: translate3d(0px, 0px, 0px);
+          content-visibility: visible;
+        }
+      }
+      @media screen and (max-width:540px) {
+        .sorry{
+          font-size: 24px;
+        }
+        #lottie-container {
+          width: 50%; 
+          transform: translate3d(0px, 0px, 0px);
+          content-visibility: visible;
+        }
+      }
+    </style>
+    <title>Document</title>
+</head>
+<body style="margin:auto;font-family: 'Poppins', sans-serif;text-align:center;">
+  <div class="wrapper-outer">
+    <div class="wrapper" >
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="shadow"></div>
+      <div class="shadow"></div>
+      <div class="shadow"></div>
+     </div>
+  </div>
+    <div style="margin: auto;text-align:center" id="lottie-container">
+
+    </div>
+    
+    <span class="sorry" style="padding:5px;color: #8fc3b2">Sorry this page isn't availaible</span>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      $(window).on("load",function(){
+        $(".wrapper-outer").fadeOut("slow");
+   });
+  </script>
+  
+    <script>
+        const animationContainer = document.getElementById('lottie-container');
+        const animation = bodymovin.loadAnimation({
+          container: animationContainer,
+          path: '/404.json', // Replace with the path to your Lottie JSON file
+          renderer: 'svg', // You can use 'canvas' or 'svg'
+          loop: true,
+          autoplay: true,
+        });
+        if(window.innerWidth<=640){
+          animationContainer.style.width = window.innerWidth+'px'; // New width
+        }
+
+    </script>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anub0709" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FFBF00" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+      
+</body>
+</html>

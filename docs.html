@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y29CP0B203"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-Y29CP0B203');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="/fav png.png">
+    <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+    <title>Docs</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Round&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/docs.css">
+    <link rel="stylesheet" href="/loader.css">
+    <link rel="stylesheet" href="/madeWithLove.css">
+    <meta name="description" content="Access subject documents and class notes, essential. Visit our dedicated page and enhance your learning experience">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Orbitron:wght@600&family=Playfair+Display&family=Rajdhani:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        .popup {
+            display: flex;
+            z-index: 9;
+            position: fixed;
+            flex-direction: column;
+            align-items: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 0px 60px 10px rgba(0, 0, 0, 0.6);
+        }
+        .popup button{
+            background-color: #34ffc2;
+            padding: 6px;
+            border: 0px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        @media screen and (min-width:1024px) {
+            .contact-box{
+                min-width: 900px !important;
+            }
+        }
+        @media screen and (max-width:540px){
+            .popup p{
+                font-size: 14px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrapper-outer">
+        <div class="wrapper" >
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="shadow"></div>
+          <div class="shadow"></div>
+          <div class="shadow"></div>
+        </div>
+    </div>
+    <!-- Pop-up box HTML structure -->    
+    <div class="popup popAlert3" id="popup3">
+        <p>Flat notes added!</p>
+        <button onclick="closePopup(3)">Close</button>
+    </div>    
+    <div class="popup popAlert2" id="popup2">
+        <p>Updated OS section with notes</p>
+        <button onclick="closePopup(2)">Close</button>
+    </div>
+    <div class="popup popAlert1" id="popup1">
+        <p>Updated with new Section - 'JAVA LAB'</p>
+        <button onclick="closePopup(1)">Close</button>
+    </div>
+    <header>
+        <nav>
+            <section class="left-nav">
+                <div class="left-nav-logo">
+                    <a href="/index.html"><img src="/HOLO DOCS-logos_black-cropped.webp" alt=""></a>
+                    <span id="hamburger" style="padding-right: 10px;font-size:25px">&#9776;</span>
+                </div>
+            </section>
+            <section class="right-nav">
+                <div class="right-nav-links">
+                    <span><a href="/index.html">Home</a></span>
+                    <span><a href="/download_process.html">Docs</a></span>
+                    <span><a href="/course.html">Course Links</a></span>
+                    <span><a href="#footer">Contact Me</a></span>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <div class="img"><img src="/bg.webp" alt="bg"></div>
+    <main>
+        <p>
+            Welcome to the hub of subject-specific documents, your gateway to enriched learning. This section is dedicated to equipping you with a curated assortment of resources tailored for each subject. Immerse yourself in a collection featuring lecture notes, study materials, reference documents, and more. The goal is to empower you with the tools you need to excel in every facet of your academic journey. Take a step forward in unlocking a world of knowledge designed to fuel your success.
+        </p>
+       <section class="document-section">
+        <div class="sub-btns">
+            <button id="dbms-btn" onclick="showDbms()">DBMS</button><button id="flat-btn" onclick="showFlat()">FLAT</button><button id="java-btn" onclick="showJava()">JAVA</button><button id="os-btn" onclick="showOs()">OS</button><button id="se-btn" onclick="showSe()">SE</button><button id="dbms-lab-btn" onclick="showDbManual()">DBMS Lab</button><button id="os-lab-btn" onclick="showOsManual()">OS Lab</button><button id="java-lab-btn" onclick="showJavaManual()">Java Lab</button>
+        </div>
+            <div class="document-table">
+                <div id="dbms-table" class="dbms-table">
+                    <div class="document-row">
+                        <div class="doc-para">
+                            <p>
+                                DBMS ALL UNITS MALLAREDDY COLLEGE R-13
+                            </p>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1SHu4nCota6ns8Bce21g18pYq2H9-MZ83/view?usp=sharing" target="_blank">View PDF</a>
+                    </div>
+                    <div class="document-row"> 
+                        <div class="doc-para">
+                            <p>DBMS ALL UNITS MALLAREDDY COLLEGE R-17</p>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1S0v92KjV6V_GzlnbPKr_AIZQxooif5Ky/view?usp=sharing" target="_blank">View PDF</a>
+                    </div>
+                    <div class="document-row"> 
+                        <div class="doc-para">
+                            <p>DBMS UNIT-1 PART-1</p>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1yw3YAdFHykY63WMcDWyNZePaC-swjcGt/view?usp=sharing" target="_blank">View PDF</a>
+                    </div>
+                    <div class="document-row"> 
+                        <div class="doc-para">
+                            <p>DBMS UNIT-1 PART-2</p>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1T1W0vwKDKmCvUWmmcru7jGfChta6ltrs/view?usp=sharing" target="_blank">View PDF</a>
+                    </div>
+                    <div class="document-row"> 
+                        <div class="doc-para">
+                            <p>DBMS UNIT-2 PART-01</p>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1JygRQk2V39ZrPKX0NaGuDRKRzT3qeWzk/view?usp=sharing" target="_blank">View PDF</a>
+                    </div>
+                    <div class="document-row"> 
+                        <div class="doc-para">
+                            <p>DBMS UNIT-2 PART-02</p>
+                        </div>
+                        <a href="https://drive.google.com/file/d/13FTDjnD9AOqWKufWchOFZ2RKTS69Zfuo/view?usp=sharing" target="_blank">View PDF</a>
+                    </div>
+                    <div class="document-row"> 
+                        <div class="doc-para">
+                            <p>DBMS UNIT-2 PART-03</p>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1Y_BCCC6WyYGqtXQhNZd1Wbf5h7JAM7Lw/view?usp=sharing" target="_blank">View PDF</a>
+                    </div>
+                    <div class="document-row"> 
+                        <div class="doc-para">
+                            <p>DBMS UNIT-3 PART-01</p>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1t_XZk0Ipnr_whOoPYXxcHfIezqAGlgMI/view?usp=sharing" target="_blank">View PDF</a>
+                    </div>
+                    <div class="document-row"> 
+                        <div class="doc-para">
+                            <p>DBMS UNIT-3 PART-02</p>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1vVkGEawfF53vf5gX7mD7kGAIZR7otOL1/view?usp=sharing" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                <div id="flat-table" class="flat-table">
+                    <div class="document-row">
+                        <div class="doc-para">
+                            <p>Flat complete notes till UNIT5</p>
+                        </div>
+                        <a href="https://drive.google.com/file/d/14Jwg2Q3BS93CLj_mzkZXrZBAa3wwq90U/view?usp=drivesdk" target="_blank">View PDF</a> 
+                    </div>
+                </div>
+                <div id="java-table" class="java-table">
+                    <div class="document-row">
+                        <div class="doc-para">
+                            <details>
+                                <summary>
+                                    UNIT-1
+                                </summary>
+                                <div class="summary-details">
+                                    <p>HISTORY OF JAVA</p>
+                                    <a href="https://drive.google.com/file/d/1d0E5YMf7OJicGDLMPkDdX9r8wrGzcuP-/view?usp=sharing">View PDF</a>
+                                </div>
+                                <div class="summary-details">
+                                    <p>OVERVIEW OF JAVA</p>
+                                    <a href="https://drive.google.com/file/d/1hPoHFRDtYfC4rl8i7o86fIEmYfc__JhI/view?usp=sharing">VIew PDF</a>
+                                </div>
+                                <div class="summary-details"> 
+                                    <p>DATA TYPES</p>
+                                    <a href="https://drive.google.com/file/d/1H2xJ5W8uN3JGVNp5zWTANFXzv1Yxct_N/view?usp=sharing">VIew PDF</a>
+                                </div>
+                                <div class="summary-details"> 
+                                    <p>OPERATORS</p>
+                                    <a href="https://drive.google.com/file/d/1jxHHlH-GksPdjxyLcQmZoESSOD9nNCT5/view?usp=sharing">VIew PDF</a>
+                                </div>
+                                <div class="summary-details"> 
+                                    <p>CONTROL STATEMENTS</p>
+                                    <a href="https://drive.google.com/file/d/1OQk1yF6vdzzWOjZ5zwLm42gw6K9XKvxC/view?usp=sharing">VIew PDF</a>
+                                </div>
+                                <div class="summary-details"> 
+                                    <p>INTRODUCTION TO CLASSES</p>
+                                    <a href="https://drive.google.com/file/d/1QZjjg2YY1WOlAqYJRVJbqJAjBNc5wyBi/view?usp=sharing">VIew PDF</a>
+                                </div>
+                                <div class="summary-details"> 
+                                    <p>METHODS AND CLASSES</p>
+                                    <a href="https://drive.google.com/file/d/1-WzfRX1dm4dcDEnoX-Wf8MkAHEgclTB0/view?usp=sharing">VIew PDF</a>
+                                </div>
+                                <div class="summary-details"> 
+                                    <p>INHERITANCE</p>
+                                    <a href="https://drive.google.com/file/d/197yHFaczjKGXSHUQ95MjxGjlVKMXw5DZ/view?usp=sharing">VIew PDF</a>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                    <div class="document-row">
+                        <div class="doc-para">
+                            <details>
+                                <summary>
+                                    UNIT-2
+                                </summary>
+                                <div class="summary-details"> 
+                                    <p>PACKAGES AND INTERFACE</p>
+                                    <a href="https://drive.google.com/file/d/1tZD2V6r2JoT8b_oOPw2ETKjhcY_iT7dG/view?usp=sharing">VIew PDF</a>
+                                </div>
+                                <div class="summary-details"> 
+                                    <p>APPLETS AND OTHER TOPICS</p>
+                                    <a href="https://drive.google.com/file/d/18m37aWqHwFbYv5gRFuM-EBxgJ_rotjpd/view?usp=sharing">VIew PDF</a>
+                                </div>
+                                <div class="summary-details"> 
+                                    <p>INPUT OUTPUT JAVA.IO</p>
+                                    <a href="https://drive.google.com/file/d/15c82TwCA_GGvhwSU49rxnzr9Udjv3SoV/view?usp=sharing">VIew PDF</a>
+                                </div>
+                                <div class="summary-details"> 
+                                    <p>GENERICS</p>
+                                    <a href="https://drive.google.com/file/d/1l_YqfR4NJdoezjM_jEXPKrsHPRZIMcGD/view?usp=sharing">VIew PDF</a>
+                                </div>
+                                <div class="summary-details"> 
+                                    <p>ENUMERATION AUTOBOXING AND ANNOTATIONS</p>
+                                    <a href="https://drive.google.com/file/d/1rbfiTfnP-yNM2pgnrZIYSjczk4CEucmw/view?usp=sharing">VIew PDF</a>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                    <div class="document-row">
+                        <div class="doc-para">
+                            <details>
+                                <summary>
+                                    UNIT-3
+                                </summary>
+                                <div class="summary-details"> 
+                                    <p>EXCEPTIONAL HANDLING</p>
+                                    <a href="https://drive.google.com/file/d/1LJ6w7LUQZCPGtFhAWPxt1ENH8vgkkyHH/view?usp=drivesdk">VIew PDF</a>
+                                </div>
+                                <div class="summary-details"> 
+                                    <p>MULTI THREADING PROGRAM</p>
+                                    <a href="https://drive.google.com/file/d/1vcgkmDZSzHH9N4HrVHEHNpfGbyNCXXek/view?usp=drivesdk">VIew PDF</a>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                    <div class="document-row">
+                        <div class="doc-para">
+                            <details>
+                                <summary>
+                                    UNIT-4
+                                </summary>
+                                <div class="summary-details"> 
+                                    <p>COLLECTION FRAMEWORKS</p>
+                                    <a href="https://drive.google.com/file/d/1xoWK0_U2wqne_qJmayQ0DSWNizQqKMnb/view?usp=drivesdk">VIew PDF</a>
+                                </div>
+                                <div class="summary-details"> 
+                                    <p>MORE UTILITY CLASSES</p>
+                                    <a href="https://drive.google.com/file/d/1y1bdfIgokJv7xzwtlMPgGEr6rplUOP-m/view?usp=drivesdk">VIew PDF</a>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="os-table" class="os-table">
+                    <div class="document-row">
+                        <div class="doc-para">
+                            <P>UNIT-1 OPERATING SYSTEM INTRO</P>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1v5OU--j52o5r16DXmDtX9qM8P-cTp15L/view?usp=sharing" target="_blank">View PDF</a>
+                    </div>
+                    <div class="document-row"> 
+                        <div class="doc-para">
+                            <details>
+                                <summary>
+                                    UNIT-2
+                                </summary>
+                                <div class="summary-details"> 
+                                    <p>UNIT 2.1.1 PROCESS_CONCEPTS</p>
+                                    <a href="https://drive.google.com/file/d/1vFP6nuKcqnWoosar6PzaCwt7rrBYBqdl/view?usp=sharing">VIew PDF</a>
+                                </div>
+                                <div class="summary-details"> 
+                                    <p>UNIT 2.1.2 PROCESS SCHEDULING</p>
+                                    <a href="https://drive.google.com/file/d/1KWL-C1bJlyupglSWEcHOt7cJxQrkynVH/view?usp=sharing">VIew PDF</a>
+                                </div>
+                                <div class="summary-details"> 
+                                    <p>UNIT 2.2 SYSTEM CALLS</p>
+                                    <a href="https://drive.google.com/file/d/1UB9kRjpwygDg8ZlyUCfzreKb1fcdYnj4/view?usp=sharing">VIew PDF</a>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                    <div class="document-row">
+                        <div class="doc-para">
+                            <details>
+                                <summary>
+                                    UNIT-3
+                                </summary>
+                                <div class="summary-details"> 
+                                    <p>3.1 DEAD LOCKS</p>
+                                    <a href="https://drive.google.com/file/d/1a5mk3d1uB5ZHrostAtYOrpI9Ei1z9lWR/view?usp=sharing">VIew PDF</a>
+                                </div>
+                                <div class="summary-details"> 
+                                    <p>3.2 PROCESS MANAGEMENT</p>
+                                    <a href="https://drive.google.com/file/d/1wq34nN4pa6fkKhHLKf5SnFEZMnS7MGT_/view?usp=sharing">VIew PDF</a>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                    <div class="document-row">
+                        <div class="doc-para">
+                            <P>UNIT-4 MEMORY MANAGEMENT</P>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1-dtV7RuRpLPJmbziHY61SfxjLjEoLdck/view?usp=sharing" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                <div id="se-table" class="se-table">
+                    <div class="document-row">
+                        <div class="doc-para">
+                           <p>SOFTWARE ENGINEERING ALL UNITS(MALLA REDDY INSTITUTE R17)</p>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1StL7BefI6L0BSsGDktY83GqurYOQooRf/view?usp=drivesdk" target="_blank">View PDF</a>
+                    </div>
+                    <div class="document-row"> 
+                        <div class="doc-para">
+                            <p>SOFTWARE ENGINEERING ALL UNITS(MALLA REDDY INSTITUTE R18)</p>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1Ezc1BtIPVcwcvE4nwKv86lXcO8u9d6lI/view?usp=drivesdk" target="_blank">View PDF</a>
+                    </div>
+                    <div class="document-row"> 
+                        <div class="doc-para">
+                            <p>SOFTWARE ENGINEERING ALL UNITS</p>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1JHRyZww0W_UhHWTKO9mftjlm8LxnnbRO/view?usp=drivesdk" target="_blank">View PDF</a>
+                    </div>
+                    <div class="document-row"> 
+                        <div class="doc-para">
+                            <p>UNIT 1</p>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1OFvk9HwvM4ruqLrkGzdCAFIqDU7YkO6Q/view?usp=drivesdk" target="_blank">View PDF</a>
+                    </div>
+                    
+                </div>
+                <div id="DBMS-Lab-table" class="DBMS-Lab-table">
+                    <div class="document-row">
+                        <div class="doc-para">
+                            <p>DBMS LAB MANUAL</p>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1-NOGaf7YlvJtgArV2tiDnnlzbCHgimpw/view?usp=sharing" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                <div id="OS-Lab-table" class="OS-Lab-table">
+                    <div class="document-row">
+                        <div class="doc-para">
+                            <p>0S LAB MANUAL</p>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1wUNjJkqlt1h3vpBG27Dtt9lMFl1BkvAz/view?usp=sharing" target="_blank">View PDF</a>
+                    </div>
+                    <div class="document-row">
+                        <div class="doc-para">
+                            <p>0S LAB RECORD</p>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1DqhWXrKAeQc41odOak3h9gnc-3QlA-_M/view?usp=sharing" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                <div id="Java-lab-table" class="java-Lab-table">
+                    <div class="document-row">
+                        <div class="doc-para">
+                            <p>Java Lab Manual (External site)</p>
+                        </div>
+                        <a href="https://drive.google.com/file/d/16bOGeXFtkj4bbobL4Cd-F-GecguysGaT/view?usp=sharing" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                <!-- Add more document rows as needed -->
+            </div>
+        </section>
+    <!-- Repeat similar sections for other subjects -->
+
+    <section class="document-section">
+        <h2>Out of Subject</h2>
+        <!-- Document rows and additional information for subject B -->
+        <div class="document-table">
+            <div class="document-row">
+                <div class="doc-para">
+                    <p>none</p>
+                </div>
+                <a href="path_to_document_1.pdf" target="_blank">View PDF</a>
+            </div>
+            <div class="document-row">
+                <div class="doc-para">
+                    <p>none</p>
+                </div>
+                <a href="path_to_document_2.pdf" target="_blank">View PDF</a>
+            </div>
+            <!-- Add more document rows as needed -->
+        </div>
+    </section>
+    </main>
+    <footer id="footer">
+        <div class="contact">
+            <h1>Contact</h1>
+            <div class="contact-box">
+                <div class="cont-left">
+                    <h2>Contact <br> Me</h2>
+                    <p>Feel free to contact me regarding any inquiries about course links and documents. 
+                        Whether you need help with content, site navigation, or extra resources, I'm available.
+                        Reach out via direct message or email for quick assistance. Your feedback is valuable,
+                         and I'm dedicated to a seamless and informative site experience. I appreciate your 
+                         visit and anticipate aiding you.
+                    </p>
+                    <p>Thank You</p>
+                </div>
+                <div class="cont-right">
+                    <form action="https://formsubmit.co/16d73c1ac59c340329e082d075026963  " method="POST">
+                        <label for="name"><strong></strong></label><br />
+                        <input type="text" name="name" placeholder="Name" required /><br />
+                        <label for="email"><strong></strong></label><br />
+                        <input type="email" name="email" placeholder="Email" required /><br />
+                        <label for="message"><Strong></Strong></label><br>
+                        <input type="hidden" name="_next" value="https://holodocs.netlify.app/thankyou.html">
+                        <input type="hidden" name="_captcha" value="true">
+                        <input type="hidden" name="_blacklist" value="fuck, bastered, bad words, sex, stupid, idiot, bitch">
+                        <input type="hidden" name="_autoresponse" value="Hello there,
+                        Rest assured, I'll be in touch shortly to assist you with your query. 
+                        Best regards, -Anurag">
+                        <textarea name="message" id="message" cols="35" rows="10" placeholder="Message">Request a free course or pdf...</textarea><br>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <h2>Advice:</h2>
+            <P>If you have any questions, need information, or require assistance with course links and documents, feel free to reach out to me. 
+                You can easily get in touch by sending me a message or an email. I am dedicated to addressing your inquiries and ensuring that the
+                 course links and documents are kept current and relevant. Your input is important, and I will make every effort to respond promptly
+                  and provide the necessary updates. Thank you for considering my site as a resource, and I'm here to help in any way I can.
+
+                <br>Thank you and regards,<br>
+                <a style="color: aquamarine;" href="https://anu27.tech" target="_blank">Anurag</a>
+                <P>Admin</P>
+        </div>
+        <section class="madeWithLove">
+            <span>Made &nbsp;with</span>
+             <span class="love">
+                <i class="fas fa-heart" style="color: #eb0046;"></i>
+            </span> 
+            <span>by</span>&nbsp;<a  href="https://anu277.github.io/Portfolio/">Anu.B</a>&nbsp;.
+        </section>
+    </footer>
+    <div class="cpr">
+        <p> © 2023 HOLO DOCS. </p><p>  This website is designed to be both free and fair to use. We encourage you to explore 
+            the content and resources provided here. For any inquiries or concerns related to copyright or usage, please feel free to reach out 
+            by messaging us. Your feedback and suggestions are valuable to us as we strive to maintain a platform that respects intellectual 
+            property rights while fostering an open and accessible environment.
+        </p>
+        <!-- BEGIN: Powered by Supercounters.com -->
+        <center style="position: fixed;top:50%;left:-20px;transform:rotateZ(-90deg)"><script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script><script type="text/javascript">sc_online_i(1671540,"e9e9e9","000000");</script><br><noscript><a href="https://www.supercounters.com/">free online counter</a></noscript>
+        </center>
+        <!-- END: Powered by Supercounters.com -->
+    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/scrollreveal.min.js"></script>
+    <script src="/script.js"></script>
+    <script src="/docs.js"></script>
+    <script>
+        const hamMenu=document.getElementById("hamburger");
+        const navLinks=document.querySelector(".right-nav-links");
+        function openNav(){
+            if(navLinks.style.display==="flex"){
+                navlinks.style.display="none";
+            }
+            else{
+                navlinks.style.display="flex";
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      $(window).on("load",function(){
+        $(".wrapper-outer").fadeOut("slow");
+   });
+  </script>
+  <script>
+    const hamburger=document.getElementById("hamburger");
+    const righthnavLinks = document.querySelector(".right-nav-links");
+    const rightNav=document.querySelector(".right-nav")
+    hamburger.addEventListener("click",()=>{
+        console.log("hello");
+    if (righthnavLinks.style.display==="flex") {
+        console.log("hello-100");
+        righthnavLinks.style.display="none";
+    } else {
+        righthnavLinks.style.display="flex";
+    }
+    });
+  </script>
+  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="anub0709" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FFBF00" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+</body>
+</html>

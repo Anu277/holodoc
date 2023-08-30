@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+.madeWithLove{
+    margin: auto;
+    margin-top: 50px;
+    font-family: 'Bungee', cursive;
+    text-align: center;
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    border-top: 1px solid #ff2b64;
+}
+.madeWithLove span{
+    font-size: 24px;
+}
+.madeWithLove a{
+    text-decoration: underline;
+    font-size: 24px;
+    color: #ff2b64;
+    /* animation: heartbeat 1.5s infinite; */
+}
+.madeWithLove .love{
+    width: 100px;
+    animation: heartbeat 1s infinite;
+}
+@keyframes heartbeat {
+    0% {
+      font-size: medium;
+      padding:0px 5.5px ;
+    }
+    16.66% {
+        font-size: 24px;
+        padding:0px ;
+    }
+    33.33% {
+        font-size: medium;
+        padding:0px 5.5px ;
+    }
+    50% {
+        font-size: 24px;
+        padding:0px ;
+    }
+    66.6%{
+        font-size:medium ;
+        padding:0px 5.5px ;
+    }
+    100%{
+        font-size : medium;
+        padding:0px 5.5px ;
+    }
+  }
+.love:hover{
+    transform: translate(0px,-10px);
+    animation: none;
+    
+  }
+  .madeWithLove a:hover{
+    color:#fff ;
+  }
+  
+  @media screen and (max-width:540px) {
+    .madeWithLove span{
+        font-size: 20px;
+    }
+    .madeWithLove a{
+        font-size: 20px !important;
+    } 
+    
+@keyframes heartbeat {
+    0% {
+      font-size: medium;
+      padding:0px 2.5px ;
+    }
+    16.66% {
+        font-size: 20px;
+        padding:0px ;
+    }
+    33.33% {
+        font-size: medium;
+        padding:0px 2.5px ;
+    }
+    50% {
+        font-size: 20px;
+        padding:0px ;
+    }
+    66.6%{
+        font-size:medium ;
+        padding:0px 2.5px ;
+    }
+    100%{
+        font-size : medium;
+        padding:0px 2.5px ;
+    }
+  }
+  }

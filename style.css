@@ -6,12 +6,26 @@
     color: #276A7E;
     color: #2F4858;
 }
-
+::-webkit-scrollbar {
+    width: 10px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background: #b9b9b9;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: #00ca87;
+    }
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
 }
 a{
     text-decoration: none;
@@ -33,7 +47,8 @@ header{
     background-size: cover;
 }
  nav{
-    height: 100vh;
+    position: relative;
+    min-height: 100vh;
     background-color: #6fffb9;
     display: flex;
     justify-content: space-between;
@@ -41,15 +56,32 @@ header{
 }
 nav a:hover{
     border-radius: 3px;
-    color: #ffdfb8;
+    color: #0c0c0c;
     background-color: #00592e;
 }
 .left-nav{
-    display: flex;
+    position: relative;
+    margin: auto;
     align-items: center;
 }
+.left-nav-logo{
+    margin: auto;
+}
+.left-nav-logo a span{
+    margin: 10px;
+    font-size: 7.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.docs-logo{
+    background-color: #000000;
+    color: #fff7ee;
+}
+#hamburger{
+    display: none;
+}
 .left-nav a:hover{
-    background-color:#6fffb9;
+    text-decoration: none;
+    background-color: #00000000;
 }
 .right-nav{
     max-width: 50%;
@@ -70,7 +102,8 @@ nav a:hover{
     background-color:#6fffb9;
 }
 .right-nav-links{
-    padding: 0px 20px;
+    /* width: 100%; */
+    /* padding: 0px 20px; */
     display: flex;
     justify-content: space-around;
 }
@@ -90,9 +123,43 @@ nav a:hover{
     color:#6fffb9;
 }
 
-.header-flex .matter{
+main{
+    padding: 50px;
+    margin: auto;
+    /* width: 60%; */
+    text-align: center;
+}
+.docs{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 10%;
+}
+.docs img{
+    height: 350px;
+    margin-right:50px;
+}
+.course{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.course img{
+    height: 350px;
+    margin-right:50px;
+}
+.docs a,.course a{
+    margin: 5px;  
+    background-color: #28DABB;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 4px;
 }
 footer{
+    padding: 15px;
+    padding-top: 50px;
     line-height: 200%;
     color: #fffff0;
     margin: auto;
@@ -104,7 +171,7 @@ footer{
     color: #fffff0;
 }
 .contact-box{
-    max-width: 620px;
+    max-width: 720px;
     margin: auto;
     padding: 2rem;
     border-radius: 15px;
@@ -114,6 +181,10 @@ footer{
     display: flex;
     justify-content: space-between;
     /* box-shadow: 0px 0px 30px #69ff9682; */
+}
+.contact-box h2{
+    font-size: 44px;
+    line-height: 150%;
 }
 .contact h1{
     color: aquamarine;
@@ -136,7 +207,7 @@ padding: 7px;
 height: 30px;
 outline: 0px;
 border: 0px solid;
-color: #ffdfb8;
+color: #5dffc9;
 border-radius: 0px 5px;
 font-size: 20px;
 background-color: #a3a3a36b;
@@ -147,16 +218,20 @@ background-color: #2828286b;
 border-bottom: 1px solid #6f6f6f;
 }
 .cont-right textarea {
-resize: none;
+/* resize: none; */
 outline: 0px;
 border: 0px;
 padding: 10px;
 border-radius: 15px;
 font-family: 'Poppins', sans-serif;
-color: #ffdfb8;
+color: #5dffc9;
 background-color: #a3a3a36b;
 overflow: auto;
 }
+.cont-right textarea:focus {
+    background-color: #2828286b;
+    border-bottom: 1px solid #6f6f6f;
+    }
 .cont-right textarea::-webkit-scrollbar {
 width: 5px;
 }
@@ -191,3 +266,168 @@ cursor: pointer;
 .cpr p:nth-child(1){
     font-size: 18px;
 }
+
+/*/////////////////////////////*/
+@media screen and (max-width:1525px) {
+    .left-nav-logo img{
+        width: 100%;
+    }
+    .right-nav a{
+        font-size:100%;
+    }
+    .right-nav h1{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    p{
+        font-size: 18px;
+    }
+    nav{
+        display: block;
+    }
+    .left-nav{
+        display: block;
+        text-align: center;
+    }
+    .left-nav-logo {
+        padding: 20px;
+        text-align: left;
+        text-align: center;
+    }
+    .left-nav-logo a span {
+        margin: 0;
+        font-size: 70px;
+    }
+    .right-nav{
+       max-width: 100%;
+       padding: 0px;
+       padding-top: 5px;
+    }
+    .right-nav a{
+       text-align: center;
+    }
+    .docs{
+        flex-direction: column;
+    }
+    .docs img{
+        height: 50%;
+        max-height:140px ;
+    }
+    .course{
+        flex-direction: column-reverse;
+    }
+    .course img{
+        height: 50%;
+        max-height:140px ;
+    }
+    footer{
+        padding: 0px;
+        padding-top: 20px;
+    }
+    .contact-box{
+        flex-direction: column;
+        width: 100%;
+        padding: 5px;
+    }
+    .cont-right input{
+        width: 400px;
+        max-width: 500px;
+    }
+    .about {
+        padding: 20px;
+    }
+}
+
+/***********************************************/
+
+
+@media screen and (max-width:565px) {
+    body p, body a{
+        font-size: medium !important;
+    }
+    h1{
+    font-size: 35px;
+    }
+    h2{
+        
+    }
+    nav{
+        height: 100%;
+    }
+    #hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .left-nav-logo {
+        padding: 20px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+    }
+    .left-nav-logo a span {
+        margin: 0;
+        font-size: 30px;
+    }
+    
+    .right-nav-links{
+        display: none;
+        width: 100%;
+        position: absolute;
+        margin: auto;
+        padding: 0%;
+        background-color: #8484842c;
+        backdrop-filter: blur(4px);
+        flex-direction: column;
+        align-items: center;
+    }
+    .right-nav-links a{
+        padding: 2px 80px;
+    }
+    .right-nav-links span{
+        margin:5px 0px ;
+    }
+    .right-nav .header-flex h1{
+        font-size: 35px;
+    }
+    main {
+        height: 100%;
+    }
+    footer{
+        padding-top: 50px;
+    }
+    .contact-box{
+        padding: 0%;
+        width: 80%;
+        padding-top: 15px;
+    }
+    .cont-left h2{
+        font-size: 30px;
+    }
+    .cont-right{
+        line-height: normal !important;
+        padding: 10px;
+        margin: 0;
+        text-align: left;
+    }
+    .cont-right input{
+        width: 70%;
+        height: 20px;
+    }
+    .cont-right textarea{
+        max-width: 300px;
+        width: 80%;
+    }
+    .about{
+        padding: 20px;
+    }
+    .about p{
+        font-size: 12px !important;
+        line-height: normal;
+    }
+    .cpr p{
+        font-size: 12px !important;
+    }
+}
+
